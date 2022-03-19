@@ -4,7 +4,7 @@
 
 * Installation
 
-  ~cuda_img_filter depends on ~freeimage~ and ~nvcc~. If you want to use the
+  ~cuda_img_filter~ depends on ~freeimage~ and ~nvcc~. If you want to use the
   ~clang~ compiler instead of ~nvcc~, you have to modify the makefile.
 
   #+begin_src bash
