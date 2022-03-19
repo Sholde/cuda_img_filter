@@ -1,0 +1,10 @@
+# Files and binaries
+*~
+*.o
+cuda_img_filter
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.ppm

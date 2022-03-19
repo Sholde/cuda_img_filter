@@ -1,0 +1,38 @@
+#+title: Image filter in CUDA
+#+author: Sholde
+#+date: 16 febuary 2022
+
+* Installation
+
+  ~cuda_img_filter depends on ~freeimage~ and ~nvcc~. If you want to use the
+  ~clang~ compiler instead of ~nvcc~, you have to modify the makefile.
+
+  #+begin_src bash
+    $ make
+  #+end_src
+
+* Usage
+
+  #+begin_src bash
+    $ ./cuda_img_filter --help
+    Usage: ./cuda_img_filter [INPUT] [OUTPUT] [OPTION] [PARAMETER]
+             --saturate C          C = r, g, b
+             --horizontal-symetry  -
+             --blur INTENSITY      INTENSITY = INTEGER
+             --rgb-to-gray         -
+             --sobel               -
+             --slide-effect C      C = INTEGER
+             --streams             -
+             --keep C              C = r, g, b
+             --opposite            -
+  #+end_src
+
+* Examples
+
+  #+begin_src bash
+    $ ./cuda_img_filter img.jpg new_img.jpg --saturate b
+  #+end_src
+
+  #+begin_src bash
+    $ ./cuda_img_filter img.jpg new_img.jpg --streams
+  #+end_src
